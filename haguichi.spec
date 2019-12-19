@@ -17,3 +17,36 @@ BuildRequires:  vala
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libnotify)
 Recommends:     %{name}-lang
+
+%description
+Haguichi provides a graphical frontend for Hamachi.
+It features customizable commands, notification bubbles, tooltips, along with a
+searchable, sortable and collapsible network list. It also can backup and
+restore the Hamachi configuration directory.
+
+%lang_package
+
+%prep
+%setup -q
+
+%build
+%meson
+%meson_build
+
+%install
+%meson_install
+%fdupes %{buildroot}/%{_datadir}
+%find_lang %{name}
+
+%files
+%license LICENSE
+%doc AUTHORS
+%{_bindir}/%{name}
+%dir %{_datadir}/metainfo
+%{_datadir}/metainfo/%{rdnn}.appdata.xml
+%{_datadir}/applications/%{rdnn}.desktop
+%{_datadir}/glib-2.0/schemas/%{rdnn}.gschema.xml
+%{_datadir}/icons/hicolor/*/*/*%{name}*
+%{_sysconfdir}/xdg/autostart/%{rdnn}.autostart.desktop
+
+%files lang -f %{name}.lang
