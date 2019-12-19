@@ -48,5 +48,3 @@ restore the Hamachi configuration directory.
 %{_datadir}/glib-2.0/schemas/%{rdnn}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*%{name}*
 %{_sysconfdir}/xdg/autostart/%{rdnn}.autostart.desktop
-
-%files lang -f %{name}.lang
