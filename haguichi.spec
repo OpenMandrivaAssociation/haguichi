@@ -12,7 +12,6 @@ BuildRequires:  gettext
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  meson
 BuildRequires:  pkgconfig
-BuildRequires:  update-desktop-files
 BuildRequires:  vala
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libnotify)
