@@ -15,7 +15,6 @@ BuildRequires:  pkgconfig
 BuildRequires:  vala
 BuildRequires:  pkgconfig(gtk+-3.0)
 BuildRequires:  pkgconfig(libnotify)
-Recommends:     %{name}-lang
 
 %description
 Haguichi provides a graphical frontend for Hamachi.
@@ -42,8 +41,8 @@ restore the Hamachi configuration directory.
 %doc AUTHORS
 %{_bindir}/%{name}
 %dir %{_datadir}/metainfo
-%{_datadir}/metainfo/%{rdnn}.appdata.xml
-%{_datadir}/applications/%{rdnn}.desktop
-%{_datadir}/glib-2.0/schemas/%{rdnn}.gschema.xml
+%{_datadir}/metainfo/%{name}.appdata.xml
+%{_datadir}/applications/%{name}.desktop
+%{_datadir}/glib-2.0/schemas/%{name}.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*%{name}*
-%{_sysconfdir}/xdg/autostart/%{rdnn}.autostart.desktop
+%{_sysconfdir}/xdg/autostart/%{name}.autostart.desktop
