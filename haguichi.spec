@@ -1,4 +1,4 @@
-Name:           haguchi
+Name:           haguichi
 Version:        1.4.2
 Release:        1
 Summary:        Hamachi Network Manager
