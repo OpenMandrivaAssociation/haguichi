@@ -41,8 +41,8 @@ restore the Hamachi configuration directory.
 %doc AUTHORS
 %{_bindir}/%{name}
 %dir %{_datadir}/metainfo
-%{_datadir}/metainfo/%{name}.appdata.xml
-%{_datadir}/applications/%{name}.desktop
-%{_datadir}/glib-2.0/schemas/%{name}.gschema.xml
+%{_datadir}/metainfo/com.github.ztefn.haguichi.appdata.xml
+%{_datadir}/applications/com.github.ztefn.haguichi.desktop
+%{_datadir}/glib-2.0/schemas/com.github.ztefn.haguichi.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*%{name}*
-%{_sysconfdir}/xdg/autostart/%{name}.autostart.desktop
+%{_sysconfdir}/xdg/autostart/com.github.ztefn.haguichi.autostart.desktop
