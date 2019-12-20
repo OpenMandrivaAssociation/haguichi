@@ -46,3 +46,4 @@ restore the Hamachi configuration directory.
 %{_datadir}/glib-2.0/schemas/com.github.ztefn.haguichi.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*%{name}*
 #{_sysconfdir}/xdg/autostart/com.github.ztefn.haguichi.autostart.desktop
+%{_datadir}/locale/*/LC_MESSAGES/haguichi.mo
