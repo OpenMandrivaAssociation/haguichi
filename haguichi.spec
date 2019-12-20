@@ -45,4 +45,4 @@ restore the Hamachi configuration directory.
 %{_datadir}/applications/com.github.ztefn.haguichi.desktop
 %{_datadir}/glib-2.0/schemas/com.github.ztefn.haguichi.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*%{name}*
-%{_sysconfdir}/xdg/autostart/com.github.ztefn.haguichi.autostart.desktop
+#{_sysconfdir}/xdg/autostart/com.github.ztefn.haguichi.autostart.desktop
