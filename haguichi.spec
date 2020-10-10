@@ -1,11 +1,13 @@
+%define over 1.143.0
+
 Name:           haguichi
-Version:        1.4.2
+Version:        1.4.3
 Release:        1
 Summary:        Hamachi Network Manager
 License:        GPLv3+
 Group:          Productivity/Networking/Other
 URL:            https://www.haguichi.net/
-Source0:        https://github.com/ztefn/haguichi/releases/download/%{version}/%{name}-%{version}.tar.xz
+Source0:        https://github.com/ztefn/haguichi/archive/%{over}/%{name}-%{over}.tar.gz
 # Mirror source: https://launchpad.net/haguichi/s
 BuildRequires:  fdupes
 BuildRequires:  gettext
@@ -25,7 +27,7 @@ restore the Hamachi configuration directory.
 %lang_package
 
 %prep
-%setup -q
+%setup -qn %{name}-%{over}
 
 %build
 %meson
