@@ -1,5 +1,5 @@
 Name:           haguichi
-Version:        1.4.4
+Version:        1.4.5
 Release:        1
 Summary:        Hamachi Network Manager
 License:        GPLv3+
