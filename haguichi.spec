@@ -1,6 +1,6 @@
 Name:           haguichi
 Version:        1.4.5
-Release:        1
+Release:        2
 Summary:        Hamachi Network Manager
 License:        GPLv3+
 Group:          Productivity/Networking/Other
@@ -14,7 +14,6 @@ BuildRequires:  meson
 BuildRequires:  pkgconfig
 BuildRequires:  vala
 BuildRequires:  pkgconfig(gtk+-3.0)
-BuildRequires:  pkgconfig(libnotify)
 
 %description
 Haguichi provides a graphical frontend for Hamachi.
