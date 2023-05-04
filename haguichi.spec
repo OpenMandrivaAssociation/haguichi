@@ -1,3 +1,6 @@
+# Workaround for Clang 16
+%global optflags %{optflags} -Wno-incompatible-function-pointer-types
+
 Name:           haguichi
 Version:        1.4.6
 Release:        1
