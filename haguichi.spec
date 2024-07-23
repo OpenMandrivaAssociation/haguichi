@@ -2,21 +2,26 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:           haguichi
-Version:        1.4.6
+Version:        1.5.0
 Release:        1
 Summary:        Hamachi Network Manager
 License:        GPLv3+
 Group:          Productivity/Networking/Other
 URL:            https://haguichi.net
 Source0:        https://github.com/ztefn/haguichi/releases/download/%{version}/%{name}-%{version}.tar.xz
-# Mirror source: https://launchpad.net/haguichi/1.4/%{version}/+download/%{name}-%{version}.tar.xz
+# Mirror source: https://launchpad.net/haguichi/1.5/%{version}/+download/%{name}-%{version}.tar.xz
 BuildRequires:  fdupes
 BuildRequires:  gettext
 BuildRequires:  hicolor-icon-theme
 BuildRequires:  meson
 BuildRequires:  pkgconfig
 BuildRequires:  vala
-BuildRequires:  pkgconfig(gtk+-3.0)
+BuildRequires:  pkgconfig(gee-0.8)
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(gtk4)
+BuildRequires:  pkgconfig(libadwaita-1)
+BuildRequires:  pkgconfig(libportal)
+BuildRequires:  pkgconfig(libportal-gtk4)
 
 %description
 Haguichi provides a graphical frontend for Hamachi.
@@ -43,7 +48,7 @@ restore the Hamachi configuration directory.
 %doc AUTHORS
 %{_bindir}/%{name}
 %dir %{_datadir}/metainfo
-%{_datadir}/metainfo/com.github.ztefn.haguichi.appdata.xml
+%{_datadir}/metainfo/com.github.ztefn.haguichi.metainfo.xml
 %{_datadir}/applications/com.github.ztefn.haguichi.desktop
 %{_datadir}/glib-2.0/schemas/com.github.ztefn.haguichi.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*%{name}*
