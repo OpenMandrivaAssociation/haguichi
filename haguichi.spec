@@ -2,7 +2,7 @@
 %global optflags %{optflags} -Wno-incompatible-function-pointer-types
 
 Name:           haguichi
-Version:        1.5.0
+Version:        1.5.1
 Release:        1
 Summary:        Hamachi Network Manager
 License:        GPLv3+
