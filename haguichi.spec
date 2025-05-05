@@ -10,6 +10,7 @@ Group:          Productivity/Networking/Other
 URL:            https://haguichi.net
 Source0:        https://github.com/ztefn/haguichi/releases/download/%{version}/%{name}-%{version}.tar.xz
 # Mirror source: https://launchpad.net/haguichi/1.5/%{version}/+download/%{name}-%{version}.tar.xz
+BuildRequires:  desktop-file-utils
 BuildRequires:  fdupes
 BuildRequires:  gettext
 BuildRequires:  hicolor-icon-theme
